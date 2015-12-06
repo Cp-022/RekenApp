@@ -1,3 +1,4 @@
+function Alles(){
 soortTafel = parseInt(prompt("welke tafel wil je doen?"));
 x = 0;
 maxTafel = 13;
@@ -9,12 +10,10 @@ function exNumber(soortTafel){
     userInput = parseInt(prompt("wat is " + soortTafel + " keer " + x));
     if (userInput === answer){
       alert("yay");
-      document.getElementById("blackguy").style.property="background-image:url('../img/blackguyhey.png')";
       score = score + 1;
     }
     else{
       alert("FOUT");
-      document.getElementById("blackguy").style.property="background-image:url('../img/blackguy.png')";
     }
   }
   if ( x = 13){
@@ -22,3 +21,4 @@ function exNumber(soortTafel){
   }
 }
 exNumber(soortTafel);
+}
