@@ -8,5 +8,9 @@ html{
   float:left;
   border:1px solid black;
   height:80%;
-  
+  padding-left:50px;
+
 }
+
+
+@keyframes anim

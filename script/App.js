@@ -31,7 +31,7 @@ function Alles(){
     for (x = 0; x < maxTafel; x++){
       answer = soortTafel * x;
       document.getElementById("vragenlijst").innerHTML +="<span id=vraag"+x+">";
-      document.getElementById("vraag"+x).innerHTML = "<p><span>wat is " + soortTafel + " keer " + x + "</span>" + "<input type=text id='antwoord'+"+x + "> </input></p>";
+      document.getElementById("vraag"+x).innerHTML = "<p><span>wat is " + soortTafel + " keer " + x + "</span> " + "<input type=text id='antwoord'+"+x + "> </input></p>";
       antwoord = document.getElementById('antwoord'+x);
     }
   }
