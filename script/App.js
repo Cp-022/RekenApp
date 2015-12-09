@@ -1,25 +1,29 @@
 function Submit(){
   for (x = 0; x < maxTafel; x++){
     if(parseInt(document.getElementById('antwoord'+x).value) === antwoorden[x]){
-      score++;
-      alert("OMG GOED");
+      goed++;
     }
     else{
-      score--;
-      alert("BADJAS");
+      fout++;
     }
   }
-  if(x === 13){
-    document.write(score);
+  grade = ;
+  if (score > 7){
+    alert("goedzo!");
   }
+  else{
+    alert("volgende keer beter");
+  }
+  document.getElementById('grade').innerHTML = "Je hebt een " + grade + "!";
 }
 function Alles(){
   /*IMPORTING STUFF*/
+  fout = 0;
+  goed = 0;
   x = 0;
   antwoorden = new Array();
   maxTafelAllowed = 12;
   maxTafel = 13;
-  score = 1;
   /*DONE IMPORTING */
 
   soortTafel = parseInt(prompt("welke tafel wil je doen?"));

@@ -1,5 +1,7 @@
 html{
-
+  background-image:url('../img/background.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
 }
 
 #vragenlijst{
@@ -9,4 +11,6 @@ html{
   border:1px solid black;
   height:80%;
   padding-left:50px;
+  background-color:rgba(0,0,0,0.5);
+  color:white;
 }
